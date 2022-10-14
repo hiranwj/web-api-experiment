@@ -1,3 +1,94 @@
-h1{
-    color: blue;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // position: relative;
 }
+
+body{
+  display: flex;
+}
+
+#circle1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // top: 0;
+    // margin: auto;
+
+    width: 50px;
+    height: 50px;
+    background-color: olivedrab;
+    border-radius: 100%;
+    // animation: circle1 6s linear infinite;
+}
+
+#circle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // top: 0;
+    // margin: auto;
+
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 100%;
+    // animation: circle2 6s linear infinite;
+}
+
+#path{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // top: 0;
+    // margin: auto;
+
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+@keyframes circle1{
+    0%{
+      transform:rotate(360deg)
+                translate(-225px)
+                rotate(360deg);
+    
+    }
+    100%{
+      transform:rotate(0deg)
+                translate(-225px)
+                rotate(0deg);
+    }
+  }
+
+  @keyframes circle2{
+    0%{
+      transform:rotate(0deg)
+                translate(-225px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-225px)
+                rotate(-360deg);
+    }
+  }
